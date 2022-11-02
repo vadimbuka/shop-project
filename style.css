@@ -7,6 +7,12 @@ body {
     background-image: url("img/patt.png");
 }
 
+h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -192,4 +198,87 @@ body {
 
 .menu li:hover ul {
     display: block;
+}
+
+/* Styles for MAIN -------------------------*/
+
+.slider {
+    height: 400px;
+    background-color: rgba(35, 90, 147, 0.75);
+    border-bottom: 1px solid #fff;
+}
+
+.slider-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-container {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.filter {
+    width: 270px;
+    height: 845px; /* temporarily */
+    background-color: rgba(255,255,255,0.75);
+    margin-right: 15px;
+}
+
+.main-area {
+    margin-left: 15px;
+}
+
+.breadcrumbs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #96b8dc;
+    font-size: 14px;
+    font-weight: light;
+}
+
+.breadcrumbs a:last-child {
+    text-decoration: underline;
+}
+
+.breadcrumbs a::after {
+    content: ">";
+    margin: 0 8px;
+}
+
+.breadcrumbs a:last-child::after {
+    content: "";
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    width: 870px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-sort-by {
+    height: 40px;
+    width: 270px;
+    border: 1px solid #fff;
+}
+
+#sort-by {
+    height: 38px;
+    width: 268px;
+    border: none;
+    background-color: #2c71b8;
+    color: #2c71b8;
+    font-size: 21px;
+    font-weight: 100;
+    outline: none;
 }
