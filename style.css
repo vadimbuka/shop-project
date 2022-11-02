@@ -137,15 +137,19 @@ body {
     top: -10px;
 }
 
-a.active-menu {
+.active-menu > a {
     position: relative;
-    background-color: #2c71b8;
-    color: #fff;
+    /* background-color: #2c71b8;
+    color: #fff; */
 }
 
-.active-menu a::after {
-    content: "";
+.active-menu {
+    position: relative;
+}
 
+.active-menu > a::after {
+    content: "";
+    display: none;
     position: absolute;
     top: 15px;
     right: 5px;
@@ -157,10 +161,20 @@ a.active-menu {
     background-size: 20px 20px;
 }
 
+.active-menu:hover > a::after {
+    display: block;
+}
+
 .active-menu ul {
     position: absolute;
     display: none;
     width: 285px;
+    left: -1px;
+}
+
+.menu li:hover a {
+    background-color: #2c71b8;
+    color: #fff;
 }
 
 .menu ul li:hover a {
