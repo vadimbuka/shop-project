@@ -364,3 +364,28 @@ h2 {
     font-size: 21px;
     font-weight: 300;
 }
+
+.property {
+    color: #fff;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.property:last-child {
+    margin-bottom: 0;
+}
+
+.property-name {
+    font-weight: 700;
+}
+
+.property-value {
+    font-weight: 300;
+}
+
+.product-price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    
+}
