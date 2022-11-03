@@ -13,6 +13,13 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -218,23 +225,19 @@ h1 {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 }
 
 .filter {
     width: 270px;
     height: 845px; /* temporarily */
     background-color: rgba(255,255,255,0.75);
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
-.main-area {
-    margin-left: 15px;
-}
 
 .breadcrumbs {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 15px;
 }
 
 .breadcrumbs a {
@@ -264,6 +267,10 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    margin-left: 15px;
 }
 
 .form-sort-by {
@@ -283,4 +290,77 @@ h1 {
     outline: none;
     color: #fff;
     border: 1px solid #fff;
+}
+
+.products-container {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.product {
+    height: 650px;
+    width: 270px;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border: 1px solid #fff;
+}
+
+.product-img-block {
+    position: relative;
+    height: 180px;
+    line-height: 180px;
+    background-color: rgba(255,255,255,0.75);
+    text-align: center;
+}
+
+.product-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.pic-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.pic {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #548cc5;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pic-1 {
+    background-image: url("img/frame-blue.png");
+}
+
+.pic-2 {
+    background-image: url("img/heart.png");
+}
+
+.product-info-block {
+    margin: 15px;
+}
+
+.product p {
+    display: block;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
 }
