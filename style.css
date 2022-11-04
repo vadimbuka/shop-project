@@ -454,10 +454,6 @@ h2 {
 }
 
 .diagonal-line {
-    /* background: 
-    linear-gradient(to bottom right, transparent 49.50%, #fff, transparent 50.50%),
-    linear-gradient(to top right, transparent 49.50%, #fff, transparent 50.50%); */
-    background-image: linear-gradient(to bottom right, transparent 49.50%, #fff, transparent 50.50%), linear-gradient(to top right, transparent 49.50%, #fff, transparent 50.50%);
-    /* background-image: linear-gradient(to top right, transparent 49.50%, #fff, transparent 50.50%); */
-    background-repeat: no-repeat;
+    background-image:   linear-gradient(to bottom right, transparent 49.50%, #fff, transparent 50.50%), 
+                        linear-gradient(to top right, transparent 49.50%, #fff, transparent 50.50%);
   }
