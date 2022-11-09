@@ -228,14 +228,62 @@ h2 {
     /* padding: 0 15px; */
 }
 
+/* START FILTER -------------*/
 .filter {
     width: 270px;
     height: 845px; /* temporarily */
     background-color: rgba(255,255,255,0.25);
     margin: 0 15px;
+    padding: 30px;
     min-width: 270px;
 }
 
+.properties {
+    margin-bottom: 65px;
+}
+
+.filter h3 {
+    color: #fff;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.property-value {
+    margin-bottom: 25px;
+}
+
+.filter input[type="checkbox"] {
+    opacity: 0;
+}
+
+.filter label {
+    position: relative;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.property-value label::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+
+    position: absolute;
+    left: -20px;
+    top: 6px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #fff;
+}
+
+/* END FILTER ---------------*/
 
 .breadcrumbs {
     margin: 30px 15px;
